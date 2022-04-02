@@ -25,9 +25,11 @@ const Layout = ({ children }) => {
   return (
     <Fragment>
       <Head>
-        <title>Rafayel's Sub-Zero and Viking repair</title>
-        <meta property="og:description" 
-          content="Appliance Repair Service in Tarzana, Encino, Sherman Oaks, Studio City, and more..." />
+        <title>Rafayel&#39;s Sub-Zero and Viking repair</title>
+        <meta
+          property="og:description"
+          content="Appliance Repair Service in Tarzana, Encino, Sherman Oaks, Studio City, and more..."
+        />
       </Head>
       <div id="wrapper">{children}</div>
 
