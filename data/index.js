@@ -118,15 +118,15 @@ export const FeatureOneData = [
   },
   {
     icon: "icon-mechanic",
-    title: "8 Years Experience",
+    title: "12 Years Experience",
   },
 ];
 
 export const AboutOneData = {
-  title: "Heating and air conditioning repair and installation company",
-  tagLine: "Welcome to loazzne",
+  title: "Repair and  maintenance company",
+  tagLine: "Welcome to Rafael's repair",
   content:
-    "There are many variations of passages of lorem ipsum available, but the majorify have suffered alteration in some form by injected humour, or randmised words which don't look even slightly believable.",
+    "Refrigerator, freezer, wine cooler, range, stove, cooktop, oven, double oven repair and maintenance",
   button: {
     url: "/about",
     label: "LEARN MORE",
@@ -263,44 +263,26 @@ export const TestimonialOneData = {
     {
       image: testimonial1,
       content:
-        "This is due to their excellent service, competitive pricing and customer support . It's throughly refresing to get such a personal touch.",
+        "They did a repair on my refrigerator a few years back. Recently they fixed my range. Both times they provided a great service. Both times they gave me a fair estimate of what it takes to fix my appliances and provided warranty on parts and labor. They were quick, reliable and affordable.",
       name: "Della Barnett",
-      designation: "CEO",
     },
     {
       image: testimonial2,
       content:
-        "This is due to their excellent service, competitive pricing and customer support . It's throughly refresing to get such a personal touch.",
-      name: "Max Dunn",
-      designation: "Developer",
+        "I was so used to this range that when it was slammed, I decided not to buy a new one but to call them. And they are truly professionals. My subzero range now works like new. Recommend!",
+      name: "Helen Dunn",
     },
     {
       image: testimonial3,
       content:
-        "This is due to their excellent service, competitive pricing and customer support . It's throughly refresing to get such a personal touch.",
+        "5 star service! Couldn't ask for better! So grateful I'll be recommending to everyone I know!",
       name: "Alberta Potter",
-      designation: "Director",
     },
     {
       image: testimonial1,
       content:
-        "This is due to their excellent service, competitive pricing and customer support . It's throughly refresing to get such a personal touch.",
+        "Honest and smart. Called them for a second opinion on a oven repair. He came over and within a minutes made a diagnosis and resolved the issue. Thanks a lot",
       name: "Della Barnett",
-      designation: "CEO",
-    },
-    {
-      image: testimonial2,
-      content:
-        "This is due to their excellent service, competitive pricing and customer support . It's throughly refresing to get such a personal touch.",
-      name: "Max Dunn",
-      designation: "Developer",
-    },
-    {
-      image: testimonial3,
-      content:
-        "This is due to their excellent service, competitive pricing and customer support . It's throughly refresing to get such a personal touch.",
-      name: "Alberta Potter",
-      designation: "Director",
     },
   ],
 };
@@ -509,15 +491,12 @@ export const AboutTwoData = {
   caption: " 8 <span>years experience</span> ",
   blockTitle: {
     title:
-      "We are trusted source of ac and heating maintenance repairs company",
+      "We are trusted source of appliance repair and maintenance company",
     tagline: "Why choose us",
   },
   lists: [
     {
       text: " Unmatched performance, satisfaction service guarantees",
-    },
-    {
-      text: " Home protection through our shoe covers and mats",
     },
     {
       text: " Upfront, flat rate pricing—no overtime charges",
@@ -678,7 +657,7 @@ export const BenefitOneData = {
     },
     {
       icon: "icon-mechanic",
-      title: "8 Years Experience",
+      title: "12 Years Experience",
       text: "There are many passages of lorem ipsum available but the majority have alteration.",
     },
   ],

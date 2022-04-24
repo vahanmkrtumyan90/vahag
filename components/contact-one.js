@@ -1,6 +1,32 @@
-import React from "react";
+import {useState} from "react";
+import { useForm, ValidationError } from '@formspree/react';
 
 const ContactOne = () => {
+  const [name, setName] = useState('');
+  const [phone, setTel] = useState('');
+  const [zip, setZip] = useState('');
+  const [brand, setBrand] = useState('');
+  const [type, setType] = useState('');
+  const [message, setMessage] = useState('');
+  
+  const [state, handleSubmit] = useForm("xknypgod");
+
+
+  const handleClick = async () => {
+    const data = {
+      name,
+      phone,
+      zip,
+      brand,
+      type,
+      message
+    }
+
+    handleSubmit(data);
+}
+
+console.log(state)
+
   return (
     <section className="contact_form_area">
       <div className="contact_form_width">
@@ -20,26 +46,50 @@ const ContactOne = () => {
           <h4 className="heading_with_border">Get a free quote</h4>
           <h1>To request a service call, please fill out the form below</h1>
         </div>
-        <form action="#" method="post">
+        {state.succeeded ? 
+        <h1>Thank you. Your request is submitted</h1> :
+        <div>
           <input
-            className="half_width input_m_right"
             type="text"
-            name="fname"
+            name="name"
             placeholder="Your name"
+            onChange={e => setName(e.target.value)}
           />
-          <input
-            className="half_width"
-            type="EMAIL"
-            name="email"
-            placeholder="Email address"
+          <input type="tel" name="tell" placeholder="Phone number" onChange={e => setTel(e.target.value)}/>
+          <ValidationError
+            style={{color: 'red'}}
+            prefix="Phone" 
+            field="phone"
+            errors={state.errors}
           />
-          <input type="tel" name="tell" placeholder="Phone number" />
-          <input type="text" name="tell" placeholder="Message" />
-
-          <button className="btn-yellow" value="SUBMIT NOW">
+          <input type="text" name="zip" placeholder="ZIP code" onChange={e => setZip(e.target.value)}/>
+          <span className="select_icon">
+            <select name="select" id="select" onChange={e => setBrand(e.target.value)}>
+              <option value="Select brand">Select brand</option>
+              <option value="Sub Zero">Sub Zero</option>
+              <option value="Viking">Viking</option>
+              <option value="Wolf">Wolf</option>
+              <option value="La Cornue">La Cornue</option>
+              <option value="Other">Other</option>
+            </select>
+          </span>
+          <span className="select_icon">
+            <select name="select" id="select 2" onChange={e => setType(e.target.value)}>
+              <option value="Select brand">Select type</option>
+              <option value="Refrigerator">Refrigerator</option>
+              <option value="Freezer">Freezer</option>
+              <option value="Range">Range</option>
+              <option value="Stove">Stove</option>
+              <option value="Cooktop">Cooktop</option>
+              <option value="Oven">Oven</option>
+              <option value="Double oven">Double oven</option>
+            </select>
+          </span>
+          <input type="text" name="tell" placeholder="Message" onChange={e => setMessage(e.target.value)}/>
+          <button className="btn-yellow" onClick={handleClick}>
             SUBMIT NOW
           </button>
-        </form>
+        </div>}
       </div>
     </section>
   );
