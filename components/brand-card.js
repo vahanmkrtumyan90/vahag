@@ -1,11 +1,11 @@
 import React from "react";
 import Img from "./img";
 
-const TeamCard = ({ data }) => {
+const BrandCard = ({ data }) => {
   const { image, name, designation, social } = data;
   return (
-    <div className="team_member">
-      <Img src={image} alt={name} layout="responsive" />
+    <div className="brand">
+      <Img src={image} alt={name} layout="responsive" style={{height: '150px'}}/>
       <div className="team_details">
         <h3>
           {name}
@@ -24,4 +24,4 @@ const TeamCard = ({ data }) => {
   );
 };
 
-export default TeamCard;
+export default BrandCard;

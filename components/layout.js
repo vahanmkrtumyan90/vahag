@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
   return (
     <Fragment>
       <Head>
-        <title>Rafael&#39;s Sub-Zero, Viking, La Cornue and Wolf repair</title>
+        <title>David&#39;s Sub-Zero, Viking and Wolf repair</title>
         <meta
           property="og:description"
           content="Appliance Repair Service in Tarzana, Encino, Sherman Oaks, Studio City, and more..."

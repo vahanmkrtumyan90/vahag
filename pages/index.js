@@ -8,6 +8,9 @@ import AboutOne from "@/components/about-one";
 import AboutTwo from "@/components/about-two";
 import TestimonialsOne from "@/components/testimonials-one";
 import ContactOne from "@/components/contact-one";
+import Brands from "@/components/brands";
+import Appliances from "@/components/appliances";
+
 const HomeOne = () => {
   return (
     <MenuContextProvider>
@@ -17,9 +20,11 @@ const HomeOne = () => {
           <AboutOne />
         </div>
         <FeatureOne />
+        <Appliances />
         <div id="whyChooseUs">
           <AboutTwo />
         </div>
+        <Brands />
         <div id="testimonials">
           <TestimonialsOne />
         </div>

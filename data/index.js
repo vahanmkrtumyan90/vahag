@@ -30,14 +30,14 @@ export const TopbarInfos = [
   {
     icon: "icon-placeholder",
     tagLine: "Address",
-    text: "66 Broklyn Street, New York",
+    text: "614 w California ave, Glendale, CA",
     url: "#",
   },
   {
     icon: "icon-phone-call",
     tagLine: "Call Now",
-    text: "747 231 9596",
-    url: "tel:747-231-9596",
+    text: "747 528 6677",
+    url: "tel:747-528-6677",
   },
   {
     icon: "icon-clock",
@@ -124,7 +124,7 @@ export const FeatureOneData = [
 
 export const AboutOneData = {
   title: "Repair and  maintenance company",
-  tagLine: "Welcome to Rafael's repair",
+  tagLine: "Welcome to David's repair",
   content:
     "Refrigerator, freezer, wine cooler, range, stove, cooktop, oven, double oven repair and maintenance",
   button: {
@@ -312,14 +312,14 @@ export const FooterInfo = [
   {
     icon: "icon-placeholder",
     tagLine: "Address",
-    text: "66 Broklyn Street, New York",
+    text: "614 w California ave, Glendale, CA",
     url: "#",
   },
   {
     icon: "icon-contact",
     tagLine: "Email",
-    text: "help@loazzne.com",
-    url: "mailto:help@loazzne.com",
+    text: "info@davids-subzero.com",
+    url: "info@davids-subzero.com",
   },
   {
     icon: "icon-clock",
@@ -603,6 +603,72 @@ export const TeamOneData = {
     },
   ],
 };
+
+import refrigerator from "@/images/appliances/ref.jpg";
+import freezer from "@/images/appliances/freezer.jpg";
+import wine from "@/images/appliances/wine.png";
+import range from "@/images/appliances/range.jpg";
+import double from "@/images/appliances/double.jpg";
+import oven from "@/images/appliances/oven.jpg";
+import cooktop from "@/images/appliances/cooktop.jpg";
+
+export const ApplianceData = {
+  title: "Appliance types",
+  posts: [
+    {
+      image: refrigerator,
+      name: "Refrigerator",
+    },
+    {
+      image: freezer,
+      name: "Freezer",
+    },
+    {
+      image: wine,
+      name: "Wine cooler",
+    },
+    {
+      image: range,
+      name: "Range",
+    },
+    {
+      image: double,
+      name: "Double oven",
+    },
+    {
+      image: oven,
+      name: "Oven",
+    },
+    {
+      image: cooktop,
+      name: "Cooktop",
+    },
+  ],
+};
+
+import subzero from "@/images/brands/subzero.png";
+import viking from "@/images/brands/vik.png";
+import wolf from "@/images/brands/logo-wolf.png";
+
+export const BrandData = {
+  title: "Appliance types",
+  posts: [
+    {
+      image: subzero,
+      name: "Sub-Zero",
+    },
+    {
+      image: viking,
+      name: "Viking",
+    },
+    {
+      image: wolf,
+      name: "Wolf",
+    },
+  ],
+};
+
+
 
 export const AboutThreeData = {
   blockTitle: {
