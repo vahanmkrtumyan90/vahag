@@ -42,7 +42,7 @@ export const TopbarInfos = [
   {
     icon: "icon-clock",
     tagLine: "Open Hours",
-    text: " Mon-Sat: 9am - 6pm",
+    text: " Mon-Sat: 8am - 8pm",
     url: "#",
   },
 ];
@@ -324,7 +324,7 @@ export const FooterInfo = [
   {
     icon: "icon-clock",
     tagLine: "Open Hours",
-    text: " Mon-Sat: 9am - 6pm",
+    text: " Mon-Sat: 8am - 8pm",
     url: "#",
   },
 ];
