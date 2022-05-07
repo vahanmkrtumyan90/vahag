@@ -4,10 +4,8 @@ import { useForm, ValidationError } from '@formspree/react';
 const ContactOne = () => {
   const [name, setName] = useState('');
   const [phone, setTel] = useState('');
-  const [zip, setZip] = useState('');
   const [brand, setBrand] = useState('');
   const [type, setType] = useState('');
-  const [message, setMessage] = useState('');
   
   const [state, handleSubmit] = useForm("xknypgod");
 
@@ -16,16 +14,12 @@ const ContactOne = () => {
     const data = {
       name,
       phone,
-      zip,
       brand,
       type,
-      message
     }
 
     handleSubmit(data);
 }
-
-console.log(state)
 
   return (
     <section className="contact_form_area">
@@ -41,7 +35,7 @@ console.log(state)
           ></iframe>
         </div>
       </div>
-      <div className="contact_form_width contact-right">
+      <div className="contact_form_width contact-right" id="contact">
         <div className="hero-title-with-shape">
           <h4 className="heading_with_border">Get a free quote</h4>
           <h1>To request a service call, please fill out the form below</h1>
@@ -62,7 +56,6 @@ console.log(state)
             field="phone"
             errors={state.errors}
           />
-          <input type="text" name="zip" placeholder="ZIP code" onChange={e => setZip(e.target.value)}/>
           <span className="select_icon">
             <select name="select" id="select" onChange={e => setBrand(e.target.value)}>
               <option value="Select brand">Select brand</option>
@@ -85,7 +78,6 @@ console.log(state)
               <option value="Double oven">Double oven</option>
             </select>
           </span>
-          <input type="text" name="tell" placeholder="Message" onChange={e => setMessage(e.target.value)}/>
           <button className="btn-yellow" onClick={handleClick}>
             SUBMIT NOW
           </button>

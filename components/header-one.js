@@ -52,9 +52,12 @@ const HeaderOne = () => {
                 })}
               </ul>
             </nav>
+          </div>
+          <div className="book_app" style={{textAlign: 'center'}}>
             <Link href="#contact" className="btn-yellow">
-              BOOK TODAY
+              BOOK AN APPOINTMENT
             </Link>
+
           </div>
         </div>
       </div>

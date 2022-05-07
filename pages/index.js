@@ -16,6 +16,7 @@ const HomeOne = () => {
     <MenuContextProvider>
       <Layout>
         <HeaderOne />
+        <Brands />
         <div id="about">
           <AboutOne />
         </div>
@@ -24,13 +25,10 @@ const HomeOne = () => {
         <div id="whyChooseUs">
           <AboutTwo />
         </div>
-        <Brands />
         <div id="testimonials">
           <TestimonialsOne />
         </div>
-        <div id="contact">
           <ContactOne />
-        </div>
         <Footer />
       </Layout>
     </MenuContextProvider>

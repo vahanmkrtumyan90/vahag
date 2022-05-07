@@ -193,6 +193,8 @@ body {
   color: #ffffff;
 }
 .btn-yellow {
+  width: auto;
+  white-space: nowrap;
   background-color: #ffd763;
   color: #38373c;
   padding: 17px 40px;
@@ -2847,6 +2849,12 @@ input.half_width {
 
 
 @media (min-width: 992px) {
+
+  .book_app {
+    position: sticky;
+    top: 100px;
+  }
+
   .header_area {
     display: block;
   }
