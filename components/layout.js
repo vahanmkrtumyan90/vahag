@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
         <title>David&#39;s Sub-Zero, Viking and Wolf repair</title>
         <meta
           property="og:description"
-          content="Appliance Repair Service in Tarzana, Encino, Sherman Oaks, Studio City, and more..."
+          content=" Sub-Zero, Viking and Wolf Repair Service in Glendale, Tarzana, Encino, Sherman Oaks, Studio City, and more..."
         />
       </Head>
       <div id="wrapper">{children}</div>
