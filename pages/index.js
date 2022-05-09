@@ -19,8 +19,9 @@ const HomeOne = () => {
         <title>David&#39;s Sub-Zero, Viking and Wolf repair</title>
         <meta
           property="og:description"
-          content=" Sub-Zero, Viking and Wolf Repair Service in Glendale, Tarzana, Encino, Sherman Oaks, Studio City, and more..."
+          content="Sub-Zero, Viking and Wolf Repair Service in Glendale, Tarzana, Encino, Sherman Oaks, Studio City, and more..."
         />
+        <meta name="description" content="Sub-Zero, Viking and Wolf Repair Service in Glendale, Tarzana, Encino, Sherman Oaks, Studio City, and more..." />
       </Head>
       <Layout>
         <HeaderOne />
