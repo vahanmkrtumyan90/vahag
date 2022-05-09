@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import MenuContextProvider from "@/context/menu-context";
 import Layout from "@/components/layout";
 import HeaderOne from "@/components/header-one";
@@ -14,6 +15,13 @@ import Appliances from "@/components/appliances";
 const HomeOne = () => {
   return (
     <MenuContextProvider>
+      <Head>
+        <title>David&#39;s Sub-Zero, Viking and Wolf repair</title>
+        <meta
+          property="og:description"
+          content=" Sub-Zero, Viking and Wolf Repair Service in Glendale, Tarzana, Encino, Sherman Oaks, Studio City, and more..."
+        />
+      </Head>
       <Layout>
         <HeaderOne />
         <Brands />

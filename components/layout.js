@@ -1,5 +1,4 @@
 import React, { Fragment, useContext, useEffect, useState } from "react";
-import Head from "next/head";
 import { Link as ScrollLink } from "react-scroll";
 import MobileMenu from "./mobile-menu";
 import { MenuContext } from "@/context/menu-context";
@@ -24,13 +23,6 @@ const Layout = ({ children }) => {
 
   return (
     <Fragment>
-      <Head>
-        <title>David&#39;s Sub-Zero, Viking and Wolf repair</title>
-        <meta
-          property="og:description"
-          content=" Sub-Zero, Viking and Wolf Repair Service in Glendale, Tarzana, Encino, Sherman Oaks, Studio City, and more..."
-        />
-      </Head>
       <div id="wrapper">{children}</div>
 
       {true === menuStatus ? <MobileMenu /> : null}
